@@ -1,6 +1,6 @@
 # AKARA
 
-AKARA merupakan website landing page yang dibuat menggunakan **Vue.js 3** dan **Vite** untuk memperkenalkan produk furnitur dan dekorasi rumah hasil kerajinan tangan pengrajin lokal Indonesia.
+AKARA merupakan website landing page yang dibuat menggunakan teknologi **Vue.js 3** dan **Vite** untuk memperkenalkan produk dan dekorasi rumah hasil kerajinan tangan pengrajin lokal Indonesia.
 
 ---
 
@@ -8,8 +8,8 @@ AKARA merupakan website landing page yang dibuat menggunakan **Vue.js 3** dan **
 
 Pastikan perangkat telah terpasang:
 
-- Node.js v18 atau lebih baru
-- npm (otomatis terpasang bersama Node.js)
+- Node.js v18 atau versi yang lebih baru
+- npm
 
 Untuk mengecek versi:
 
@@ -22,7 +22,7 @@ npm -v
 
 ## Instalasi
 
-Clone repository terlebih dahulu.
+Clone repository.
 
 ```bash
 git clone https://github.com/USERNAME/AKARA.git
@@ -31,7 +31,7 @@ git clone https://github.com/USERNAME/AKARA.git
 Masuk ke folder project.
 
 ```bash
-cd AKARA
+cd AKARA-projects
 ```
 
 Install seluruh dependency.
@@ -50,39 +50,13 @@ Jalankan development server.
 npm run dev
 ```
 
-Apabila berhasil, terminal akan menampilkan alamat seperti berikut.
+Apabila berhasil, terminal akan menampilkan url seperti berikut.
 
 ```
 Local:   http://localhost:5173/
 ```
 
-Buka alamat tersebut melalui browser.
-
----
-
-## Build Production
-
-Untuk melakukan build production.
-
-```bash
-npm run build
-```
-
-Hasil build akan berada pada folder:
-
-```
-dist/
-```
-
----
-
-## Preview Build
-
-Untuk menjalankan hasil build production.
-
-```bash
-npm run preview
-```
+Buka url tersebut melalui browser.
 
 ---
 
@@ -99,18 +73,32 @@ npm run preview
 ## Struktur Folder
 
 ```
-AKARA/
-│
-├── public/
+AKARA-projects/
 ├── src/
 │   ├── assets/
+│   │   ├── artisans/
+│   │   ├── featured/
+│   │   ├── products/
+│   │   ├── logoWhite.png
+│   │   └── mainLogo.png
+│   │
 │   ├── components/
+│   │   ├── Header.vue
+│   │   ├── Hero.vue
+│   │   ├── Collection.vue
+│   │   ├── Artisans.vue
+│   │   └── Contact.vue
+│   │
 │   ├── App.vue
-│   └── main.js
+│   ├── main.js
+│   └── style.css
 │
+├── .gitignore
+├── index.html
 ├── package.json
-├── vite.config.js
-└── README.md
+├── package-lock.json
+├── README.md
+└── vite.config.js
 ```
 
 ---
@@ -125,6 +113,6 @@ Seluruh tampilan website dibuat menggunakan komponen Vue.js dan CSS.
 
 ## Pengembang
 
-Nama Peserta : **(Isi nama Anda)**
+Nama Peserta : Sukma Fadhil Muhammad
 
-Kompetisi Web Design 2026
+SDGs CREATIVE WEB COMPETITION

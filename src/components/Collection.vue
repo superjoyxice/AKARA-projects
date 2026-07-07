@@ -91,10 +91,6 @@ const filteredProducts = computed(() => {
         <div v-for="product in filteredProducts" :key="product.id" class="product-card">
           <div class="product-image-wrapper">
             <img :src="product.image" :alt="product.name" class="product-image" />
-            <div class="badge">
-              <span class="badge-icon">🏠</span>
-              <span class="badge-text">Handmade<br>in Indonesia</span>
-            </div>
           </div>
           <div class="product-info">
             <h3 class="product-name">{{ product.name }}</h3>
@@ -215,31 +211,6 @@ const filteredProducts = computed(() => {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: white;
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 11px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.badge-icon {
-    font-size: 16px;
-}
-
-.badge-text {
-    font-weight: 600;
-    color: #333;
-    line-height: 1.2;
 }
 
 .product-info {

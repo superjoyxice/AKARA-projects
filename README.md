@@ -110,9 +110,3 @@ Project ini tidak menggunakan database maupun backend.
 Seluruh tampilan website dibuat menggunakan komponen Vue.js dan CSS.
 
 ---
-
-## Pengembang
-
-Nama Peserta : Sukma Fadhil Muhammad
-
-SDGs CREATIVE WEB COMPETITION
